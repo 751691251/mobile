@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Neighbor</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.css">
+
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+<script src="jqueryMobile/jquery.mobile-1.4.5.js"></script>
+</head>
+<body style="display: none;">
+	<div data-role="page" id="page">
+		<div data-role="header" id="header" data-position="fixed">
+			<h1>邻里互助</h1>
+		</div>
+		<div data-role="content" style="padding: 15px" class="ui-content">
+			<!--application UI goes here-->
+			<ul data-role="listview" id="carlistview" data-inset="true">
+				<li data-role="list-divider" id="cardivider">车主服务</li>
+				<li id="listitem"><a href="#">添加我的电话</a></li>
+				<li id="listitem0"><a href="#">修改我的电话</a></li>
+				<li id="listitem1"><a href="#"  data-role= "button" id="button-search-car" onclick="$.mobile.changePage('pages/car/search.html', {transition: 'flip', prefetch:'true'})">查询</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" id="footer">
+			<h3>&copy; Jerry Wang</h3>
+		</div>
+	</div>
+	
+	<script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+	
+</body>
+</html>
